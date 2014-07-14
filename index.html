@@ -27,7 +27,8 @@
 
       <form id="idea" onsubmit="return checkIdea()">
       Idea: 
-      <div class="text" contentEditable="true" name="idea">
+      <div class="text" contentEditable="true" id="dividea">
+      Enter idea here...
       </div>
       <input type="submit">
       </form>
@@ -40,7 +41,20 @@
 
   <script type="text/javascript">
     var checkIdea = function() {
-      alert('Your idea is dumb eh');    
-    }
+      var length = selectText();
+      if (length == 32) {
+        alert('Did you even try?');    
+      } else if (length < 32) {
+        alert('Your idea is dumb eh');
+      }
+      console.log(length);
+    };
+
+    var selectText = function() {
+      var element = document.getElementById('dividea');
+      var text = element.textContent || element.innerText;
+
+      return text.length;
+    };
   </script>
 </html>
