@@ -27,7 +27,8 @@
 
       <form id="idea" onsubmit="return checkIdea()">
       Idea: 
-      <input type="textarea" name="idea">
+      <div class="text" contentEditable="true" name="idea">
+      </div>
       <input type="submit">
       </form>
 
@@ -37,7 +38,7 @@
     
   </body>
 
-  <script>
+  <script type="text/javascript">
     var checkIdea = function() {
       alert('Your idea is dumb eh');    
     }

@@ -16,6 +16,14 @@ body {
   margin: 0 auto;
 }
 
+.text {
+  margin: 10px 0px 10px auto;
+  background-color: #666;
+  font: 16px;
+  line-height: 1.5;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
 section {
   display: block;
   margin: 0 0 20px 0;
