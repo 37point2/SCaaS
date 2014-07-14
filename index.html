@@ -8,31 +8,38 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Scaas by 37point2</title>
+    <title>SCaaS by 37point2</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>Scaas</h1>
-        <h2>Sanity Check as a Service</h2>
+        <h1>Sanity-Check-as-a-Service</h1>
+        <h2>Because Sometimes Your Ideas Suck</h2>
 
-        <section id="downloads">
-          <a href="https://github.com/37point2/SCaaS/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/37point2/SCaaS/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/37point2/SCaaS" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-      <p>Test</p>
+      <h3>Does My Idea Suck?</h3>
+
+      <form id="idea" onsubmit="return checkIdea()">
+      Idea: 
+      <input type="textarea" name="idea">
+      <input type="submit">
+      </form>
 
       </section>
     </div>
 
     
   </body>
+
+  <script>
+    var checkIdea = function() {
+      alert('Your idea is dumb eh');    
+    }
+  </script>
 </html>
